@@ -1,0 +1,37 @@
+/* Navbar */
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #0a0a28;
+    border-bottom: 3px solid gold;
+    z-index: 1000;
+  }
+  
+  .logo {
+    color: gold;
+    font-size: 34px;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: gold;
+  }
+  

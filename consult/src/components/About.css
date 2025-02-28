@@ -1,0 +1,22 @@
+.about {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #0a0a28;
+    color: white;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    color: gold;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    width: 60%;
+  }
+  

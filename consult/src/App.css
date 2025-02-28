@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #0a0a28; /* Updated navbar color */
+  border-bottom: 3px solid gold;
+  z-index: 1000;
+}
+
+.logo {
+  color: gold;
+  font-size: 34px;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px black;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRArGmMN-OQNe9LorJJcWzjDmnsRurbxJy6ug&s") no-repeat center center/cover;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.company-info h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: gold;
+}
+
+.company-info p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Services Section (Hidden by Default) */
+.services {
+  padding: 40px 50px;
+  background: #0a0a28;
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 0;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: gold;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-box {
+  background: #1a1a40;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid gold;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  background: gold;
+  color: #0a0a28;
+  font-weight: bold;
 }
