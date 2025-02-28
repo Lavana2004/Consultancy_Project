@@ -1,19 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Services.css";
+
+const servicesList = [
+  "Brake Service",
+  "Wheel Alignment",
+  "Engine Diagnostics",
+  "Oil Change",
+  "Battery Replacement",
+  "Transmission Repair",
+  "AC Repair",
+  "Auto Glass Replacement",
+];
 
 const Services = () => {
   return (
     <section className="services">
       <h2>Our Services</h2>
       <div className="services-grid">
-        <div className="service-box">Brake Service</div>
-        <div className="service-box">Wheel Alignment</div>
-        <div className="service-box">Engine Diagnostics</div>
-        <div className="service-box">Oil Change</div>
-        <div className="service-box">Battery Replacement</div>
-        <div className="service-box">Transmission Repair</div>
-        <div className="service-box">AC Repair</div>
-        <div className="service-box">Auto Glass Replacement</div>
+        {servicesList.map((service, index) => (
+          <Link to={`/book/${service.replace(/\s+/g, "-").toLowerCase()}`} key={index} className="service-box">
+            {service}
+          </Link>
+        ))}
       </div>
     </section>
   );

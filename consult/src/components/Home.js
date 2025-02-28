@@ -6,7 +6,7 @@ const Home = () => {
     <div className="home">
       <div className="overlay">
         <div className="company-info">
-          <h2>Welcome to 5K Care Cars</h2>
+          <h2>Welcome to 5K Car Care</h2>
           <p>Your trusted automotive service provider for high-quality maintenance and repairs.</p>
         </div>
       </div>
