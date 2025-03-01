@@ -1,19 +1,18 @@
-/* Booking Page Styles */
+/* Service Booking Page */
 .service-booking {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Aligns content to the top */
-  height: 100vh;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
   background: #0a0a28;
   color: white;
-  padding-top: 80px; /* Pushes form downward */
 }
 
 .booking-container {
   background: #1a1a40;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
   text-align: center;
   width: 100%;
   max-width: 400px;
@@ -23,6 +22,7 @@
 .booking-container h2 {
   margin-bottom: 20px;
   color: gold;
+  font-size: 28px;
 }
 
 form {
@@ -40,7 +40,7 @@ input, select {
   padding: 10px;
   margin: 5px 0;
   width: 100%;
-  border: 1px solid gold;
+  border: 1px solid #ccc;
   border-radius: 5px;
   background: #0a0a28;
   color: white;
@@ -51,11 +51,11 @@ button {
   padding: 10px;
   background: gold;
   color: #0a0a28;
-  font-size: 16px;
-  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 button:hover {
